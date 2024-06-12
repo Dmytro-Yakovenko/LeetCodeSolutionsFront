@@ -1,0 +1,22 @@
+
+
+.main {
+    margin-top: 20px;
+}
+
+.main li {
+    border-top: 1px solid #000;
+   
+    font-family: "source-sans-pro", sans-serif;
+   
+}
+ .main h4 {
+    color: rgb(65, 70, 73);
+    font-weight: bold;
+    
+ }
+
+ .main p {
+    color: rgb(65, 70, 73);
+    
+ }
