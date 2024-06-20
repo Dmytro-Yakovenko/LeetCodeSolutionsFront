@@ -2,12 +2,19 @@
 
 const GET_ALL_PROBLEMS="GET_ALL_PROBLEMS"
 
+const GET_ONE_PROBLEM= "GET_ONE_PROBLEM"
+
 
 
 // actions 
  const getAllProblemsAction =(data)=>({
     type:GET_ALL_PROBLEMS,
     payload:data,
+ })
+
+ const getOneproblemAction =(data)=>({
+    type:GET_ONE_PROBLEM,
+    payload:data
  })
 
 
@@ -22,6 +29,15 @@ const GET_ALL_PROBLEMS="GET_ALL_PROBLEMS"
     dispatch(getAllProblemsAction(data))
  }
 
+ export const getOneProblem =(id)=>async(dispatch)=>{
+    const response = await fetch(`http://localhost:3000/problems/${id}`,{
+        method: "GET"
+    })
+   const data = await response.json()
+   console.log(data,22222)
+   dispatch(getOneproblemAction(data))
+ }
+
 
  // initial states
 
@@ -29,6 +45,7 @@ const GET_ALL_PROBLEMS="GET_ALL_PROBLEMS"
  const initialState={
     
     problems:{},
+    problem:{}
     
 }
 
@@ -43,6 +60,8 @@ const problemReducer = (state=initialState, action)=>{
                 return acc
             },{})
             return { ...state, problems: allProblems };
+        case GET_ONE_PROBLEM:
+            return {...state, problem:action.payload}
         default:
             return {...state}
     }

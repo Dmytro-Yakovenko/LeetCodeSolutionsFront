@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
 import Header from "./components/header/Header";
 import Banner from "./components/banner";
+import ProblemDataisPage from "./pages/ProblemDetailsPage/ProblemDataisPage";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Banner/>
      <Routes>
      <Route path="/" element={<HomePage/>}/>
+     <Route path="/:id" element={<ProblemDataisPage/>}/>
      </Routes>
        
     </div>
