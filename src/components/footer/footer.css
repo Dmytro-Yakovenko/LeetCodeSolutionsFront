@@ -1,0 +1,30 @@
+.footer-wrapper {
+    /* background-color: rgb(220, 218, 215); */
+   color:  rgba(24, 26, 27, 0.3);
+   display: flex;
+   align-items: center;
+  
+    gap: 15px;
+    font-size: 20px;
+   
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+     padding: 15px 0;
+     border-top: 1px rgba(24, 26, 27, 0.3) solid;
+     z-index: 1000;
+}
+
+
+.footer-wrapper a {
+    color: rgb(61, 197, 61);
+    
+}
+ .footer-wrapper a:hover {
+    color: rgb(61, 197, 61);
+    font-weight: bold;
+ }
+

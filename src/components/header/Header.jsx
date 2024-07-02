@@ -11,7 +11,7 @@ const user = useSelector(state=>state.user.user)
     <header className='header'>
       <div className='container'>
         <nav className='nav-bar'>
-          <Link to="/">
+          <Link to="/" className='header-link'>
           Solutions
           </Link>
           <ul>

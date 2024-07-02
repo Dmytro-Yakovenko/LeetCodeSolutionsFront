@@ -1,6 +1,42 @@
 .ace-editor  {
-  margin: 40px 0;
+
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.problem-main {
+  position: relative;
+  margin-top: 15px;
+  }
+
+.problem-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.problem-text {
+  font-size: 18px;
+}
+
+.problem-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.problem-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.problem-button {
+  background-color: rgb(61, 197, 61);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
 }

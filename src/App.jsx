@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/header/Header";
 import Banner from "./components/banner";
 import ProblemDataisPage from "./pages/ProblemDetailsPage/ProblemDataisPage";
+import Footer from "./components/footer/footer";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
      <Route path="/" element={<HomePage/>}/>
      <Route path="/:id" element={<ProblemDataisPage/>}/>
      </Routes>
-       
+    <Footer/>
     </div>
   )
 }

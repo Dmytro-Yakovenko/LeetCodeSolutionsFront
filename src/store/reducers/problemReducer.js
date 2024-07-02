@@ -34,7 +34,7 @@ const GET_ONE_PROBLEM= "GET_ONE_PROBLEM"
         method: "GET"
     })
    const data = await response.json()
-   console.log(data,22222)
+  
    dispatch(getOneproblemAction(data))
  }
 

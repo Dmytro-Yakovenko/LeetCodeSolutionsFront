@@ -1,0 +1,18 @@
+.tab-list {
+    display: flex;
+    gap: 5px;
+}
+
+.tab {
+font-size: 18px;
+padding: 10px;
+cursor: pointer;
+}
+
+.tab.active {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(61, 197, 61);
+}
+.tab-nav {
+    padding: 20px 0;
+}
