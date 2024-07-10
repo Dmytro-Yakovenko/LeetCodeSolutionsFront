@@ -1,0 +1,30 @@
+.btn_fix {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background-color: #ed3709;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 50;
+    cursor: pointer;
+    animation: 1s linear infinite hoverWave;
+  }
+
+  .btn_fix:after {
+    content: "";
+    background-image: url("../../assets/message.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    animation: phone-ring 2s ease-in-out infinite;
+  }

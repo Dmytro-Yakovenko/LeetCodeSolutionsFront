@@ -4,12 +4,23 @@ import { useSelector } from "react-redux";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-javascript"; // Импорт режима JavaScript
 import "ace-builds/src-noconflict/theme-monokai"; // Импорт темы оформления
+import PopUp from "../popup";
 const Solution = () => {
   const problem = useSelector((state) => state.problems.problem);
+  const [popup, setPopup]= useState(false)
+  const handleClick=()=>{
+
+    setPopup(true)
+    
+  }
  
 
   return (
     <main className="problem-main">
+           <div className="btn_fix" onClick={handleClick}></div>
+
+          {popup && <PopUp/>}
+
       <div className="container">
         <div className="problem-wrapper">
         <div className="problem-content">
@@ -29,7 +40,7 @@ const Solution = () => {
             ))}
           </ul>
         </div>
-
+   
         <div className="ace-editor">
           <AceEditor
             placeholder="Placeholder Text"

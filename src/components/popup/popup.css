@@ -1,0 +1,32 @@
+.popup {
+    position:fixed;
+    right: 5%;
+    bottom: 15%;
+    max-width: 150px;
+    max-height: 150px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+   
+    background-color: rgb(61, 197, 61);
+    padding: 15px;
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup-form textarea {
+    max-width: 120px;
+    width: 100%;
+    max-height: 100px;
+    height: 80px;
+}
+
+.popup-button {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
