@@ -25,8 +25,11 @@ export const createChatQuestion=(formData)=> async(dispatch)=>{
             messages: [{ role: "user", content: formData }],
         })
     });
-    console.log(response, 777777)
+ 
     const data = await response.json();
+
+    console.log(data, 777777)
+    dispatch(createChatQuestionAction(data.choices))
 }
 
 
@@ -34,7 +37,7 @@ export const createChatQuestion=(formData)=> async(dispatch)=>{
 
 
 const initialState = {
-    answer:{}
+    answer:[]
 }
 
 //reducer
@@ -43,6 +46,7 @@ const initialState = {
 const chatReducer =(state=initialState, action)=>{
     switch(action.type){
         case CREATE_CHAT_QUESTION:
+            console.log(action.payload,222222)
             return {...state, answer:action.payload}
         default:
             return {...state}
