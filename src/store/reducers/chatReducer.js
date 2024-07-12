@@ -28,8 +28,9 @@ export const createChatQuestion=(formData)=> async(dispatch)=>{
  
     const data = await response.json();
 
-    console.log(data, 777777)
-    dispatch(createChatQuestionAction(data.choices))
+   
+    dispatch(createChatQuestionAction({question:formData, answer:data.choices}))
+    return data
 }
 
 
@@ -46,8 +47,8 @@ const initialState = {
 const chatReducer =(state=initialState, action)=>{
     switch(action.type){
         case CREATE_CHAT_QUESTION:
-            console.log(action.payload,222222)
-            return {...state, answer:action.payload}
+           
+            return {...state, answer:[...state.answer,action.payload]}
         default:
             return {...state}
     }
