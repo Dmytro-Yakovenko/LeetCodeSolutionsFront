@@ -37,3 +37,14 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .modal-content {
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+    overflow: hidden;
+}
+
+.modal >.ace_editor {
+    width: 100% !important;
+    overflow: hidden !important;
+}

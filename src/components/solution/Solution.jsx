@@ -27,6 +27,7 @@ const Solution = () => {
           <div className="problem-content">
             <h4 className="problem-title">{problem.title}</h4>
             <p>{problem.level}</p>
+            <p>{problem.language}</p>
             <ul className="problem-text">
               {problem?.description?.split("\n").map((item, index) => (
                 <li key={index}>

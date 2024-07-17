@@ -33,7 +33,7 @@ const Problem = () => {
             </ul>
           </div>
 
-          <div className="ace-editor">
+          <div className="problem-ace-editor">
             <button className="problem-button" onClick={handleClick}>Check</button>
 
             <AceEditor

@@ -11,10 +11,6 @@ const PopUp = () => {
     const [chat, setChat]=useState("")
 const dispatch =useDispatch()
 
-
-
-
-
     const handleSubmit = async (e)=>{
         e.preventDefault()
    
