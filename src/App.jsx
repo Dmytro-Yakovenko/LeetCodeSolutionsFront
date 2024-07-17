@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/header";
 import Banner from "./components/banner";
 import ProblemDataisPage from "./pages/ProblemDetailsPage/ProblemDataisPage";
-import Footer from "./components/footer";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
