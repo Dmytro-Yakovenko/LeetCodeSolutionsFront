@@ -6,10 +6,10 @@ import './reset.css'
 import { getAllProblems } from "./store/reducers/problemReducer";
 import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
-import Header from "./components/header/Header";
+import Header from "./components/header";
 import Banner from "./components/banner";
 import ProblemDataisPage from "./pages/ProblemDetailsPage/ProblemDataisPage";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer";
 
 
 function App() {
