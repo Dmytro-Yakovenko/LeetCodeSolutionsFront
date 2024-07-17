@@ -32,7 +32,7 @@ const GET_ONE_PROBLEM= "GET_ONE_PROBLEM"
 
  export const getOneProblem =(id)=>async(dispatch)=>{
     // const response = await fetch(`http://localhost:5000/problems/${id}`,{
-        const response = await fetch(`https://leetcodesolutions.adaptable.app/${id}`,{
+        const response = await fetch(`https://leetcodesolutions.adaptable.app/problems/${id}`,{
         method: "GET"
     })
    const data = await response.json()
