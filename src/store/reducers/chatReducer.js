@@ -21,7 +21,7 @@ export const createChatQuestion=(formData)=> async(dispatch)=>{
             'Authorization': `Bearer sk-proj-6l4Rvi8oXQS0tYps6lrPT3BlbkFJNTM5xWVgkwHq4YU7uvFG`
         },
         body: JSON.stringify({
-            model: "gpt-4-turbo-preview",
+            model: "gpt-3.5-turbo-1106",
             messages: [{ role: "user", content: formData }],
         })
     });
