@@ -22,7 +22,8 @@ const signOutAction = ()=>({
 //fetches
 
 export const signUp =(data)=>async(dispatch)=>{
-    const response =await fetch("http://localhost:3000/users",{
+    // const response =await fetch("http://localhost:3000/users",{
+        const response =await fetch("https://leetcodesolutions.adaptable.app/users",{
         method:"POST",
         body:JSON.stringify(data)
     })

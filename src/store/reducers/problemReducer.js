@@ -21,7 +21,8 @@ const GET_ONE_PROBLEM= "GET_ONE_PROBLEM"
  //fetches
 
  export const getAllProblems =()=> async (dispatch)=>{
-    const response = await fetch ("http://localhost:3000/problems",{
+    // const response = await fetch ("http://localhost:5000/problems",{
+        const response = await fetch ("https://leetcodesolutions.adaptable.app/problems",{
         method:"GET"
     })
     const data = await response.json()
@@ -30,7 +31,8 @@ const GET_ONE_PROBLEM= "GET_ONE_PROBLEM"
  }
 
  export const getOneProblem =(id)=>async(dispatch)=>{
-    const response = await fetch(`http://localhost:3000/problems/${id}`,{
+    // const response = await fetch(`http://localhost:5000/problems/${id}`,{
+        const response = await fetch(`https://leetcodesolutions.adaptable.app/${id}`,{
         method: "GET"
     })
    const data = await response.json()
